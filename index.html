@@ -1,11 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança Digital para Idosos</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projeto sobre UX e acessibilidade, com foco em interfaces inclusivas, legibilidade e navegação intuitiva."
+    />
+    <title>UX e Acessibilidade</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo</a>
+
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">UX e acessibilidade</p>
+        <h1>Desenvolvendo interfaces inclusivas para todos</h1>
+        <p class="lead">
+          Boas experiências digitais vão além do visual: elas precisam ser claras,
+          simples de navegar e pensadas para diferentes perfis de usuários.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#praticas">Ver práticas</a>
+          <button class="btn btn-secondary" id="toggleContrast" type="button" aria-pressed="false">
+            Ativar alto contraste
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section class="section" id="praticas">
+        <div class="section-heading">
+          <p class="eyebrow">Princípios essenciais</p>
+          <h2>O que faz uma interface ser inclusiva?</h2>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Legibilidade</h3>
+            <p>
+              Contrastes adequados, tipografia clara e espaçamento amigável ajudam
+              pessoas a compreenderem o conteúdo com mais facilidade.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Navegação intuitiva</h3>
+            <p>
+              Menus simples, botões com rótulos objetivos e fluxo previsível reduzem
+              frustração e aumentam a autonomia do usuário.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Interação acessível</h3>
+            <p>
+              Elementos acionáveis precisam funcionar por teclado, ter foco visível e
+              oferecer feedback claro em cada etapa.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="content-grid">
+          <div>
+            <p class="eyebrow">Checklist rápido</p>
+            <h2>Pequenas escolhas geram grande impacto</h2>
+            <ul class="checklist">
+              <li>Use textos alternativos em imagens e ícones.</li>
+              <li>Mantenha contraste suficiente entre texto e fundo.</li>
+              <li>Estruture títulos e listas para facilitar a leitura.</li>
+              <li>Ofereça caminhos claros para voltar, cancelar ou avançar.</li>
+            </ul>
+          </div>
+
+          <form class="form-card" id="newsletterForm">
+            <h3>Receba dicas de acessibilidade</h3>
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required />
+
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <button class="btn btn-primary" type="submit">Quero receber</button>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Projeto desenvolvido com foco em inclusão, clareza e experiência humana.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
